@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution URL here](https://github.com/angel-retry/newsletter-sign-up-with-success-message-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Welcome to my website. I love Taylor Swift.](https://angel-retry.github.io/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
