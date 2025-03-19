@@ -291,4 +291,17 @@ li {
   .card__subscribe input {
     margin-bottom: 32px;
   }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .card {
+    margin: auto;
+  }
+  .success-msg {
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
