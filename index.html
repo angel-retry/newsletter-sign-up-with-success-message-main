@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <main class="card">
+      <div class="card__image">
+        <picture>
+          <source
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Illustration of sign-up process"
+          />
+        </picture>
+      </div>
+
+      <section class="card__content">
+        <h2 class="card__heading">Stay updated!</h2>
+        <p class="card__description">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <ul class="card__features">
+          <li class="card__feature">
+            <span class="card__feature-icon">
+              <img src="./assets/images/icon-list.svg" alt="icon list" />
+            </span>
+            <span class="card__feature-text"
+              >Product discovery and building what matters</span
+            >
+          </li>
+          <li class="card__feature">
+            <span class="card__feature-icon">
+              <img src="./assets/images/icon-list.svg" alt="icon list" />
+            </span>
+            <span class="card__feature-text"
+              >Measuring to ensure updates are a success</span
+            >
+          </li>
+          <li class="card__feature">
+            <span class="card__feature-icon">
+              <img src="./assets/images/icon-list.svg" alt="icon list" />
+            </span>
+            <span class="card__feature-text">And much more!</span>
+          </li>
+        </ul>
+
+        <form class="card__subscribe" novalidate>
+          <div class="card__subscribe__label-group">
+            <label for="email" class="card__subscribe__input-label"
+              >Email address</label
+            >
+            <p class="card__subscribe__input-error">Valid email required</p>
+          </div>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="card__input"
+            placeholder="email@company.com"
+            aria-label="Enter your email"
+            required
+          />
+          <button type="submit" class="card__button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <main class="success-msg">
+      <div class="success-msg__icon">
+        <img src="./assets/images/icon-success.svg" alt="icon success" />
+      </div>
+      <h2 class="success-msg__heading">Thanks for subscribing!</h2>
+      <div class="success-msg__description">
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com</strong>. Please open it and click the
+        button inside to confirm your subscription.
+      </div>
+      <button>Dismiss message</button>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+

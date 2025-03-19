@@ -1,0 +1,300 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+// input card
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 1rem;
+        width: 100%;
+    }
+
+    &__heading {
+        @include text-preset1-bold;
+        color: $colors-blue-800;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        @include text-preset2-regular;
+        color: $colors-blue-800;
+        margin-bottom: 24px;
+    }
+
+    &__features {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    &__feature {
+        display: flex;
+        align-items: start;
+        gap: 16px;
+
+        &-icon {
+            width: 21px;
+            height: 21px;
+        }
+
+        &-text {
+            @include text-preset2-regular;
+            color: $colors-blue-800;
+        }
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+
+        &__label-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        label {
+            @include text-preset3-bold;
+            color: $colors-blue-800;
+            margin-bottom: 8px;
+        }
+
+        p {
+            @include text-preset3-bold;
+            color: $colors-red;
+        }
+
+        input {
+            border: 1px solid $colors-grey;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+
+            @include text-preset2-regular;
+            color: $colors-grey;
+        }
+
+        input.error {
+            border: 1px solid $colors-red;
+            background: $colors-red-100;
+            color: $colors-red;
+        }
+
+        &__input-error {
+            display: none;
+        }
+
+        button {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            background-color: $colors-blue-800;
+            color: $colors-white;
+            border: 0px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition:
+                background 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+
+            @include text-preset2-bold;
+        }
+
+        button:hover {
+            background: $Linear;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// success mag card
+.success-msg {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
+    height: 100vh;
+
+    padding: 60px 1rem;
+
+    &__icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    &__heading {
+        @include text-preset1-bold;
+        color: $colors-blue-800;
+    }
+
+    &__description {
+        @include text-preset2-regular;
+        color: $colors-blue-800;
+
+        strong {
+            @include text-preset2-bold;
+            color: $colors-blue-800;
+        }
+    }
+
+    button {
+        margin-top: auto;
+        width: 100%;
+        padding: 16px 0;
+
+        @include text-preset2-bold;
+        color: $colors-white;
+        background: $colors-blue-800;
+        border: 0px;
+        border-radius: 8px;
+
+        cursor: pointer;
+        transition:
+            background 0.3s ease,
+            transform 0.2s ease,
+            box-shadow 0.3s ease;
+    }
+
+    button:hover {
+        background: $Linear;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (min-width: 474px) {
+    body {
+        background: $colors-blue-800;
+    }
+    .card {
+        width: 375px;
+        border-radius: 36px;
+        background: $colors-white;
+        overflow: hidden;
+
+        margin: 80px auto;
+
+        &__content {
+            padding: 0;
+            width: 327px;
+            margin: 40px auto;
+        }
+    }
+
+    .success-msg {
+        background: $colors-white;
+        width: 375px;
+        height: fit-content;
+        margin: 80px auto;
+        padding: 32px;
+        border-radius: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 608px;
+        padding: 40px;
+
+        &__image {
+            margin-bottom: 40px;
+
+            img {
+                border-radius: 16px;
+            }
+        }
+
+        &__content {
+            margin: 0;
+            width: 100%;
+            gap: 24px;
+        }
+
+        &__heading {
+            margin-bottom: 0;
+        }
+
+        &__description {
+            margin-bottom: 0;
+        }
+
+        &__features {
+            margin-bottom: 0;
+        }
+
+        &__subscribe {
+            input {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .success-msg {
+        width: 504px;
+        height: 520px;
+        margin: 80px auto;
+        padding: 64px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: fit-content;
+        height: 593px;
+
+        margin: 80px auto;
+        padding: 32px;
+
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+
+        &__image {
+            width: 400px;
+            height: 100%;
+            margin-bottom: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            width: 376px;
+            gap: 32px;
+        }
+
+        &__subscribe {
+            input {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
