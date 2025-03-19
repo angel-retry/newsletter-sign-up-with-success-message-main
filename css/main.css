@@ -19,6 +19,7 @@ li {
 .card {
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
 }
 .card__image img {
   width: 100%;
@@ -146,6 +147,7 @@ li {
   gap: 32px;
   height: 100vh;
   padding: 60px 1rem;
+  box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
 }
 .success-msg__icon {
   width: 64px;
