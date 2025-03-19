@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution URL here](https://github.com/angel-retry/newsletter-sign-up-with-success-message-main)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -79,7 +79,7 @@ Here’s a breakdown of the key points:
 
 ### Useful resources
 
-- [CSS Gradient](https://cssgradient.io/) - 可以在這個網站使用 css 漸層效果，並在下方複製你的 css 代碼.
+- [CSS Gradient](https://cssgradient.io/) - You can use CSS gradient effects on this website and copy the CSS code .
 
 ## Author
 - Github - [My Github](https://github.com/angel-retry)
